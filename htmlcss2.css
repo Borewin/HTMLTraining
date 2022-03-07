@@ -1,0 +1,20 @@
+
+#bloc_kiki
+{
+    display: flex;
+    width: 33%;
+    height: 70%;
+    background-image: url('https://live.staticflickr.com/7043/6904397957_aa41456455_c.jpg');
+    position:absolute;
+}
+
+#bloc_scolas
+{
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #760001;
+    padding: 3px 8px 0px 8px;
+    background-color: red;
+}
