@@ -14,7 +14,7 @@
 
 body
 {
-  background-color: aquamarine;
+    background: linear-gradient(to right,#000046, #1CB5E0);
 }
 
 /*h1, h2
@@ -22,9 +22,10 @@ body
     font-family: 'droid_sansregular', 'Arial', sans-serif;
 }*/
 
-h1, h1 + p
+h1,h1 + p
 {
     text-align: center;
+    color: rgba(25,25,112,1);
 }
 
 img
@@ -65,8 +66,25 @@ section
 #contenu
 {
     width: 85%;
+   
 }
 h1 { 
 	font-size: 100px;
    }
 
+   .MaClasse
+   {
+
+    font-weight:bold;
+    font-size: 1rem;
+    color:pink;
+
+   }
+   .MaClasse:hover
+   {
+    font-size: 1.01rem;
+    color:palevioletred;
+   }
+a:hover{
+    font-style: italic;
+}
