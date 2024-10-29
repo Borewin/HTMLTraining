@@ -1,20 +1,42 @@
-
-#bloc_kiki
-{
-    display: flex;
-    width: 33%;
-    height: 70%;
-    background-image: url('https://live.staticflickr.com/7043/6904397957_aa41456455_c.jpg');
-    position:absolute;
+*{
+    margin:0;
+    padding:0;
 }
-
-#bloc_scolas
-{
-    height: 20px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    border: 1px solid #760001;
-    padding: 3px 8px 0px 8px;
-    background-color: red;
+  
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: lightblue;
+}
+header,
+footer {
+  background-color: inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10%;
+}
+.conteneur {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px 100px 200px;
+  grid-gap: 10px;
+}
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.une {
+  grid-column: 1 / 4;
+}
+.deux {
+  grid-row: 2 / 4;
 }
