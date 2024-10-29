@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+*{
+margin: 0;
+padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: lightblue;
+}
+.container
+{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+  background-color: inherit;
+  padding: 10px 10px;
+  width: 20%;
+  text-align: left;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container .box
+{
+	position: relative;
+    width: 200px;
+    height: 100px;
+    background: yellow;
+    margin: 40px 0px;
+    font-family: consolas;
+    font-size:  2.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.1);
+}
+.container .box.shadow1 {
+  box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+.container .box.shadow2:before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  width: 90%;
+  height: 50px;
+  background: red;
+  transform-origin: left;
+  transform: skewY(5deg);
+  z-index: -1; 
+  filter: blur(5px);
+}
+.container .box.shadow3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 30px;
+  background: rgba(0,0,0,0.3);
+  transform-origin: left;
+  z-index: -1; 
+  transform: skewY(8deg);
+  filter: blur(10px);
+}
+.container .box.shadow3:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 30px;
+  background: rgba(0,0,0,0.3);
+  transform-origin: right;
+  transform: skewY(-8deg);
+  z-index: -1;
+  filter: blur(10px);
+}
+.container .box.shadow4:before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 5%;
+  width: 90%;
+  height: 20px;
+  background: rgba(0,0,0,0.3);
+ border-radius: 50%;
+  z-index: -1; 
+  filter: blur(10px);
+}
+.container .box.shadow5:before {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0,0,0,0.3);
+  z-index: -1; 
+  filter: blur(10px);
+}
+.container .box.shadow6 {
+  background: lightblue;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+              15px 15px 15px rgba(0,0,0,0.1);
+}
+.container .box.shadow7 {
+  background: lightblue;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+              15px 15px 15px rgba(0,0,0,0.1),
+              inset -5px -5px 5px rgba(255,255,255,0.2),
+              inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="htmltraining.html">Retour</a>            
+    </nav>
+</header>
+<main>
+<div class="container">
+<div class="box shadow1">test</div>
+<div class="box shadow2">test</div>
+<div class="box shadow3">test</div>
+<div class="box shadow4">test</div>
+<div class="box shadow5">test</div>
+<div class="box shadow6">test</div>
+<div class="box shadow7">test</div>
+</div>
+</main>
+<footer>
+  <a target="_blank" href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" class="lien-icone">
+      <img src="Images\openclassroom-logo.jpg" alt="Logo OpenClassrooms" >
+  </a>
+  <a target="_blank" href="https://github.com/Borewin/HTMLTraining" class="lien-icone">
+      <img src="Images\github-logo.jpg" alt="Logo Git" >
+  </a>
+</footer>
+</body>
+</html>
+
+
